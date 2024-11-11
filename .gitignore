@@ -1,0 +1,4 @@
+venv
+backup
+__pycache__
+.vscode/launch.json
