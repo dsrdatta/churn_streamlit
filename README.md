@@ -34,17 +34,13 @@ project/
 
 ## 📦 Installation
 
-    Clone the Repository
+Clone the Repository
 
-git clone https://github.com/your-username/customer-churn-prediction-app.git
-cd customer-churn-prediction-app
-
-Install Dependencies
-
-pip install -r requirements.txt
-
-Run the Streamlit App
-
+    git clone https://github.com/your-username/customer-churn-prediction-app.git
+    cd customer-churn-prediction-app
+    Install Dependencies
+    pip install -r requirements.txt
+    Run the Streamlit App
     streamlit run app.py
 
 ## 🔧 Configuration
@@ -52,28 +48,28 @@ Run the Streamlit App
 Update config.py with the paths to your data and model files. Ensure the following variables point to the correct files:
 
 # config.py
-DATA_PATH = 'data/WA_Fn-UseC_-Telco-Customer-Churn.csv'
-MODEL_PATH = 'model/model_logistic_v1.pkl'
+    DATA_PATH = 'data/WA_Fn-UseC_-Telco-Customer-Churn.csv'
+    MODEL_PATH = 'model/model_logistic_v1.pkl'
 
 ## 🧩 Usage
 
-    Filter Customer Data: Use the sidebar to filter customers by attributes like gender, contract type, and internet service.
-    View Metrics and Visualizations: Explore metrics like churn rate and average monthly charges, and view various customer insights through charts.
-    Predict Churn Probability: Select a customer ID to predict the churn probability and view the associated churn prediction.
+Filter Customer Data: Use the sidebar to filter customers by attributes like gender, contract type, and internet service.
+View Metrics and Visualizations: Explore metrics like churn rate and average monthly charges, and view various customer insights through charts.
+Predict Churn Probability: Select a customer ID to predict the churn probability and view the associated churn prediction.
 
 ## 📝 Sample Code Snippet
 
 # Example: Loading and Preprocessing Data
-from utils.data_processing import get_data, filter_data
-from utils.prediction import load_model, predict_churn
+    from utils.data_processing import get_data, filter_data
+    from utils.prediction import load_model, predict_churn
 
 # Load data and model
-data = get_data()
-model = load_model()
+    data = get_data()
+    model = load_model()
 
 # Filter data and predict churn for a customer
-filtered_data = filter_data(data, gender=['Male'], contract=['Month-to-month'])
-y_pred, y_proba = predict_churn(customer_id='12345', model=model)
+    filtered_data = filter_data(data, gender=['Male'], contract=['Month-to-month'])
+    y_pred, y_proba = predict_churn(customer_id='12345', model=model)
 
 ## 🧩 Modules
 
@@ -86,10 +82,10 @@ y_pred, y_proba = predict_churn(customer_id='12345', model=model)
 
 This app includes various visualizations, such as:
 
-    Churn Rate by Payment Method
-    Total Charges by Contract Type
-    Average Monthly Charges by Gender & Senior Citizen Status
-    Overall Churn Distribution
+- Churn Rate by Payment Method
+- Total Charges by Contract Type
+- Average Monthly Charges by Gender & Senior Citizen Status
+- Overall Churn Distribution
 
 ## 🛠️ Technologies Used
 
