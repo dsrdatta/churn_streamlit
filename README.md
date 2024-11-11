@@ -3,6 +3,11 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-Data%20App-red?style=for-the-badge&logo=streamlit)
 ![Python](https://img.shields.io/badge/Python-Data%20Science-yellow?style=for-the-badge&logo=python)
 
+
+## Streamlit Link
+
+Check out our [Streamlit app](https://c4674483563fd8a654caf185b6eebb7a474ae04e-4mkjaw9cxl9tq6vappeab.streamlit.app/) to see the project in action!
+
 ## 🌟 Overview
 
 The **Customer Churn Prediction App** is a Streamlit-based data analytics and prediction tool designed to analyze customer churn patterns in telecom data. This app uses a pre-trained logistic regression model to predict customer churn probability and provides insights into various customer attributes, helping stakeholders identify factors that influence customer retention.
