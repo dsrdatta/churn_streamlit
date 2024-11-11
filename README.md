@@ -30,9 +30,9 @@ project/
     ├── __init__.py
     ├── data_processing.py    # Functions for loading and preprocessing data
     └── prediction.py         # Functions to load the model and make predictions
+```
 
-
- Installation
+## 📦 Installation
 
     Clone the Repository
 
@@ -47,7 +47,7 @@ Run the Streamlit App
 
     streamlit run app.py
 
-🔧 Configuration
+## 🔧 Configuration
 
 Update config.py with the paths to your data and model files. Ensure the following variables point to the correct files:
 
@@ -55,13 +55,13 @@ Update config.py with the paths to your data and model files. Ensure the followi
 DATA_PATH = 'data/WA_Fn-UseC_-Telco-Customer-Churn.csv'
 MODEL_PATH = 'model/model_logistic_v1.pkl'
 
-🧩 Usage
+## 🧩 Usage
 
     Filter Customer Data: Use the sidebar to filter customers by attributes like gender, contract type, and internet service.
     View Metrics and Visualizations: Explore metrics like churn rate and average monthly charges, and view various customer insights through charts.
     Predict Churn Probability: Select a customer ID to predict the churn probability and view the associated churn prediction.
 
-📝 Sample Code Snippet
+## 📝 Sample Code Snippet
 
 # Example: Loading and Preprocessing Data
 from utils.data_processing import get_data, filter_data
@@ -75,14 +75,14 @@ model = load_model()
 filtered_data = filter_data(data, gender=['Male'], contract=['Month-to-month'])
 y_pred, y_proba = predict_churn(customer_id='12345', model=model)
 
-🧩 Modules
+## 🧩 Modules
 
     app.py: The main application script, managing the Streamlit interface and layout.
     config.py: Stores file paths and configuration settings.
     utils/data_processing.py: Contains functions to load, preprocess, and filter data.
     utils/prediction.py: Loads the model and defines the churn prediction function.
 
-📊 Visualizations
+## 📊 Visualizations
 
 This app includes various visualizations, such as:
 
@@ -91,8 +91,8 @@ This app includes various visualizations, such as:
     Average Monthly Charges by Gender & Senior Citizen Status
     Overall Churn Distribution
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
-📝 License
+## 📝 License
 
 This project is licensed under the MIT License.
