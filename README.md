@@ -73,10 +73,10 @@ Predict Churn Probability: Select a customer ID to predict the churn probability
 
 ## 🧩 Modules
 
-    app.py: The main application script, managing the Streamlit interface and layout.
-    config.py: Stores file paths and configuration settings.
-    utils/data_processing.py: Contains functions to load, preprocess, and filter data.
-    utils/prediction.py: Loads the model and defines the churn prediction function.
+- app.py: The main application script, managing the Streamlit interface and layout.
+- config.py: Stores file paths and configuration settings.
+- utils/data_processing.py: Contains functions to load, preprocess, and filter data.
+- utils/prediction.py: Loads the model and defines the churn prediction function.
 
 ## 📊 Visualizations
 
