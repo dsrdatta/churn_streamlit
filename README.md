@@ -60,16 +60,16 @@ Predict Churn Probability: Select a customer ID to predict the churn probability
 ## 📝 Sample Code Snippet
 
 Example: Loading and Preprocessing Data
-    from utils.data_processing import get_data, filter_data
-    from utils.prediction import load_model, predict_churn
+   -     from utils.data_processing import get_data, filter_data
+         from utils.prediction import load_model, predict_churn
 
 Load data and model
-    data = get_data()
-    model = load_model()
+-        data = get_data()
+         model = load_model()
 
 Filter data and predict churn for a customer
-    filtered_data = filter_data(data, gender=['Male'], contract=['Month-to-month'])
-    y_pred, y_proba = predict_churn(customer_id='12345', model=model)
+-        filtered_data = filter_data(data, gender=['Male'], contract=['Month-to-month'])
+         y_pred, y_proba = predict_churn(customer_id='12345', model=model)
 
 ## 🧩 Modules
 
